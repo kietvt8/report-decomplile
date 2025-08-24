@@ -177,7 +177,7 @@ public class rpt_PhieuXuatKhoBanThuongMai : XtraReport, IReport
 	private XRPictureBox xrPictureBox1;
 
 	private XRPageInfo xrPageInfo1;
-
+	private XRLabel xrLabel24;
 	private XRLabel xrLabel23;
 
 	public rpt_PhieuXuatKhoBanThuongMai()
@@ -311,6 +311,7 @@ public class rpt_PhieuXuatKhoBanThuongMai : XtraReport, IReport
 			this.xrTableCell25 = new DevExpress.XtraReports.UI.XRTableCell();
 			this.xrTableCell24 = new DevExpress.XtraReports.UI.XRTableCell();
 			this.ReportFooter = new DevExpress.XtraReports.UI.ReportFooterBand();
+			this.xrLabel24 = new DevExpress.XtraReports.UI.XRLabel();
 			((System.ComponentModel.ISupportInitialize)(this.xrTable3)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.xrTable1)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.xrTable2)).BeginInit();
@@ -585,6 +586,7 @@ public class rpt_PhieuXuatKhoBanThuongMai : XtraReport, IReport
 			// PageHeader
 			// 
 			this.PageHeader.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
+            this.xrLabel24,
             this.xrPageInfo1,
             this.xrLabel23,
             this.xrLabel22,
@@ -1292,6 +1294,20 @@ public class rpt_PhieuXuatKhoBanThuongMai : XtraReport, IReport
             this.xrTable6});
 			this.ReportFooter.HeightF = 269.7917F;
 			this.ReportFooter.Name = "ReportFooter";
+			// 
+			// xrLabel24
+			// 
+			this.xrLabel24.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[Table1.PhuongTienVanChuyen]")});
+			this.xrLabel24.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.xrLabel24.LocationFloat = new DevExpress.Utils.PointFloat(201.7274F, 138.625F);
+			this.xrLabel24.Name = "xrLabel24";
+			this.xrLabel24.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+			this.xrLabel24.SizeF = new System.Drawing.SizeF(322.231F, 23F);
+			this.xrLabel24.StylePriority.UseFont = false;
+			this.xrLabel24.StylePriority.UseTextAlignment = false;
+			this.xrLabel24.Text = "xrLabel10";
+			this.xrLabel24.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
 			// 
 			// rpt_PhieuXuatKhoBanThuongMai
 			// 

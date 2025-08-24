@@ -40,6 +40,8 @@ public class rep_PhieuXuatKhoKiemVanChuyenNoiBo_PDF : DataSet
 
 		private DataColumn columnDonViVanChuyen;
 
+		private DataColumn columnPhuongTienVanChuyen;
+
 		private DataColumn columnKhoXuatName;
 
 		private DataColumn columnNgayDuKienGiaoHang;
@@ -91,6 +93,10 @@ public class rep_PhieuXuatKhoKiemVanChuyenNoiBo_PDF : DataSet
 		[GeneratedCode("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
 		[DebuggerNonUserCode]
 		public DataColumn DonViVanChuyenColumn => columnDonViVanChuyen;
+
+		[GeneratedCode("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+		[DebuggerNonUserCode]
+		public DataColumn PhuongTienVanChuyenColumn => columnPhuongTienVanChuyen;
 
 		[GeneratedCode("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
 		[DebuggerNonUserCode]
@@ -209,12 +215,12 @@ public class rep_PhieuXuatKhoKiemVanChuyenNoiBo_PDF : DataSet
 
 		[GeneratedCode("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
 		[DebuggerNonUserCode]
-		public Table1Row AddTable1Row(string Tax, string TenCongTy, string DiaChi, string TongKhoan, string SoPhieuXuat, string NgayXuat, string DonViVanChuyen, string KhoXuatName, string NgayDuKienGiaoHang, string CustomerName, string DiaChiKhachHang, string DiaDiemGiaoHang, string DienThoaiLienHe, string SoLDD, string Logo, string TongSoThung, bool IsXeLanh, bool IsThungLanh, string NgayDongGoi)
+		public Table1Row AddTable1Row(string Tax, string TenCongTy, string DiaChi, string TongKhoan, string SoPhieuXuat, string NgayXuat, string DonViVanChuyen, string PhuongTienVanChuyen, string KhoXuatName, string NgayDuKienGiaoHang, string CustomerName, string DiaChiKhachHang, string DiaDiemGiaoHang, string DienThoaiLienHe, string SoLDD, string Logo, string TongSoThung, bool IsXeLanh, bool IsThungLanh, string NgayDongGoi)
 		{
 			Table1Row table1Row = (Table1Row)NewRow();
-			object[] itemArray = new object[19]
+			object[] itemArray = new object[20]
 			{
-				Tax, TenCongTy, DiaChi, TongKhoan, SoPhieuXuat, NgayXuat, DonViVanChuyen, KhoXuatName, NgayDuKienGiaoHang, CustomerName,
+				Tax, TenCongTy, DiaChi, TongKhoan, SoPhieuXuat, NgayXuat, DonViVanChuyen, PhuongTienVanChuyen, KhoXuatName, NgayDuKienGiaoHang, CustomerName,
 				DiaChiKhachHang, DiaDiemGiaoHang, DienThoaiLienHe, SoLDD, Logo, TongSoThung, IsXeLanh, IsThungLanh, NgayDongGoi
 			};
 			table1Row.ItemArray = itemArray;
@@ -249,6 +255,7 @@ public class rep_PhieuXuatKhoKiemVanChuyenNoiBo_PDF : DataSet
 			columnSoPhieuXuat = base.Columns["SoPhieuXuat"];
 			columnNgayXuat = base.Columns["NgayXuat"];
 			columnDonViVanChuyen = base.Columns["DonViVanChuyen"];
+			columnPhuongTienVanChuyen = base.Columns["PhuongTienVanChuyen"];
 			columnKhoXuatName = base.Columns["KhoXuatName"];
 			columnNgayDuKienGiaoHang = base.Columns["NgayDuKienGiaoHang"];
 			columnCustomerName = base.Columns["CustomerName"];
@@ -281,6 +288,8 @@ public class rep_PhieuXuatKhoKiemVanChuyenNoiBo_PDF : DataSet
 			base.Columns.Add(columnNgayXuat);
 			columnDonViVanChuyen = new DataColumn("DonViVanChuyen", typeof(string), null, MappingType.Element);
 			base.Columns.Add(columnDonViVanChuyen);
+			columnPhuongTienVanChuyen = new DataColumn("PhuongTienVanChuyen", typeof(string), null, MappingType.Element);
+			base.Columns.Add(columnPhuongTienVanChuyen);
 			columnKhoXuatName = new DataColumn("KhoXuatName", typeof(string), null, MappingType.Element);
 			base.Columns.Add(columnKhoXuatName);
 			columnNgayDuKienGiaoHang = new DataColumn("NgayDuKienGiaoHang", typeof(string), null, MappingType.Element);
@@ -1234,6 +1243,27 @@ public class rep_PhieuXuatKhoKiemVanChuyenNoiBo_PDF : DataSet
 			}
 		}
 
+		[DebuggerNonUserCode]
+		[GeneratedCode("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+		public string PhuongTienVanChuyen
+		{
+			get
+			{
+				try
+				{
+					return (string)base[tableTable1.PhuongTienVanChuyenColumn];
+				}
+				catch (InvalidCastException innerException)
+				{
+					throw new StrongTypingException("The value for column 'PhuongTienVanChuyen' in table 'Table1' is DBNull.", innerException);
+				}
+			}
+			set
+			{
+				base[tableTable1.PhuongTienVanChuyenColumn] = value;
+			}
+		}
+
 		[GeneratedCode("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
 		[DebuggerNonUserCode]
 		public string KhoXuatName
@@ -1585,11 +1615,25 @@ public class rep_PhieuXuatKhoKiemVanChuyenNoiBo_PDF : DataSet
 			return IsNull(tableTable1.DonViVanChuyenColumn);
 		}
 
+		[DebuggerNonUserCode]
+		[GeneratedCode("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+		public bool IsPhuongTienVanChuyenNull()
+		{
+			return IsNull(tableTable1.PhuongTienVanChuyenColumn);
+		}
+
 		[GeneratedCode("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
 		[DebuggerNonUserCode]
 		public void SetDonViVanChuyenNull()
 		{
 			base[tableTable1.DonViVanChuyenColumn] = Convert.DBNull;
+		}
+
+		[GeneratedCode("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+		[DebuggerNonUserCode]
+		public void SetPhuongTienVanChuyenNull()
+		{
+			base[tableTable1.PhuongTienVanChuyenColumn] = Convert.DBNull;
 		}
 
 		[GeneratedCode("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
