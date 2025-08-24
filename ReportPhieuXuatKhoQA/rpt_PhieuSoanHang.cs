@@ -43,8 +43,6 @@ public class rpt_PhieuSoanHang : XtraReport, IReport
 
 	private XRLabel xrLabel8;
 
-	private XRLabel xrLabel7;
-
 	private XRLabel xrLabel5;
 
 	private XRLabel xrLabel4;
@@ -155,8 +153,6 @@ public class rpt_PhieuSoanHang : XtraReport, IReport
 
 	private XRLabel xrLabel29;
 
-	private XRLabel xrLabel10;
-
 	private XRLabel xrLabel16;
 
 	private XRLabel xrLabel14;
@@ -192,7 +188,9 @@ public class rpt_PhieuSoanHang : XtraReport, IReport
 	private XRLabel xrLabel24;
 
 	private XRPageInfo xrPageInfo1;
-
+	private XRLabel xrLabel27;
+	private XRLabel xrLabel7;
+	private XRLabel xrLabel10;
 	private XRLabel xrLabel26;
 
 	public rpt_PhieuSoanHang()
@@ -278,7 +276,6 @@ public class rpt_PhieuSoanHang : XtraReport, IReport
 			this.xrLabel3 = new DevExpress.XtraReports.UI.XRLabel();
 			this.xrLabel4 = new DevExpress.XtraReports.UI.XRLabel();
 			this.xrLabel5 = new DevExpress.XtraReports.UI.XRLabel();
-			this.xrLabel7 = new DevExpress.XtraReports.UI.XRLabel();
 			this.xrLabel8 = new DevExpress.XtraReports.UI.XRLabel();
 			this.xrLabel11 = new DevExpress.XtraReports.UI.XRLabel();
 			this.xrLabel12 = new DevExpress.XtraReports.UI.XRLabel();
@@ -294,12 +291,12 @@ public class rpt_PhieuSoanHang : XtraReport, IReport
 			this.xrLabel32 = new DevExpress.XtraReports.UI.XRLabel();
 			this.xrLabel9 = new DevExpress.XtraReports.UI.XRLabel();
 			this.xrLabel6 = new DevExpress.XtraReports.UI.XRLabel();
-			this.xrLabel10 = new DevExpress.XtraReports.UI.XRLabel();
 			this.xrLabel14 = new DevExpress.XtraReports.UI.XRLabel();
 			this.xrLabel1 = new DevExpress.XtraReports.UI.XRLabel();
 			this.xrLabel15 = new DevExpress.XtraReports.UI.XRLabel();
 			this.xrLabel22 = new DevExpress.XtraReports.UI.XRLabel();
 			this.PageHeader = new DevExpress.XtraReports.UI.PageHeaderBand();
+			this.xrLabel27 = new DevExpress.XtraReports.UI.XRLabel();
 			this.xrPageInfo1 = new DevExpress.XtraReports.UI.XRPageInfo();
 			this.xrLabel26 = new DevExpress.XtraReports.UI.XRLabel();
 			this.xrTable2 = new DevExpress.XtraReports.UI.XRTable();
@@ -334,6 +331,8 @@ public class rpt_PhieuSoanHang : XtraReport, IReport
 			this.xrLabel25 = new DevExpress.XtraReports.UI.XRLabel();
 			this.xrLabel23 = new DevExpress.XtraReports.UI.XRLabel();
 			this.xrCheckBox4 = new DevExpress.XtraReports.UI.XRCheckBox();
+			this.xrLabel7 = new DevExpress.XtraReports.UI.XRLabel();
+			this.xrLabel10 = new DevExpress.XtraReports.UI.XRLabel();
 			((System.ComponentModel.ISupportInitialize)(this.xrTable3)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.xrTable1)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.xrTable2)).BeginInit();
@@ -704,18 +703,6 @@ public class rpt_PhieuSoanHang : XtraReport, IReport
 			this.xrLabel5.Text = "Ngày xuất:";
 			this.xrLabel5.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
 			// 
-			// xrLabel7
-			// 
-			this.xrLabel7.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.xrLabel7.LocationFloat = new DevExpress.Utils.PointFloat(23.95821F, 218.7917F);
-			this.xrLabel7.Name = "xrLabel7";
-			this.xrLabel7.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-			this.xrLabel7.SizeF = new System.Drawing.SizeF(500.0003F, 23F);
-			this.xrLabel7.StylePriority.UseFont = false;
-			this.xrLabel7.StylePriority.UseTextAlignment = false;
-			this.xrLabel7.Text = "2. Phương tiện vận chuyển :";
-			this.xrLabel7.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
-			// 
 			// xrLabel8
 			// 
 			this.xrLabel8.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -913,20 +900,6 @@ public class rpt_PhieuSoanHang : XtraReport, IReport
 			this.xrLabel6.Text = "4. Dự kiến ngày giao hàng:";
 			this.xrLabel6.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
 			// 
-			// xrLabel10
-			// 
-			this.xrLabel10.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[Table1.DonViVanChuyen]")});
-			this.xrLabel10.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.xrLabel10.LocationFloat = new DevExpress.Utils.PointFloat(173.3259F, 195.7916F);
-			this.xrLabel10.Name = "xrLabel10";
-			this.xrLabel10.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-			this.xrLabel10.SizeF = new System.Drawing.SizeF(350.6325F, 23F);
-			this.xrLabel10.StylePriority.UseFont = false;
-			this.xrLabel10.StylePriority.UseTextAlignment = false;
-			this.xrLabel10.Text = "xrLabel10";
-			this.xrLabel10.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
-			// 
 			// xrLabel14
 			// 
 			this.xrLabel14.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
@@ -984,6 +957,7 @@ public class rpt_PhieuSoanHang : XtraReport, IReport
 			// PageHeader
 			// 
 			this.PageHeader.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
+            this.xrLabel27,
             this.xrPageInfo1,
             this.xrLabel26,
             this.xrTable2,
@@ -1018,6 +992,20 @@ public class rpt_PhieuSoanHang : XtraReport, IReport
             this.xrLabel22});
 			this.PageHeader.HeightF = 374.4937F;
 			this.PageHeader.Name = "PageHeader";
+			// 
+			// xrLabel27
+			// 
+			this.xrLabel27.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[Table1.PhuongTienVanChuyen]")});
+			this.xrLabel27.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.xrLabel27.LocationFloat = new DevExpress.Utils.PointFloat(201.7273F, 218.7917F);
+			this.xrLabel27.Name = "xrLabel27";
+			this.xrLabel27.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+			this.xrLabel27.SizeF = new System.Drawing.SizeF(320.7727F, 23F);
+			this.xrLabel27.StylePriority.UseFont = false;
+			this.xrLabel27.StylePriority.UseTextAlignment = false;
+			this.xrLabel27.Text = "xrLabel10";
+			this.xrLabel27.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
 			// 
 			// xrPageInfo1
 			// 
@@ -1413,6 +1401,32 @@ public class rpt_PhieuSoanHang : XtraReport, IReport
 			this.xrCheckBox4.StylePriority.UseFont = false;
 			this.xrCheckBox4.StylePriority.UseTextAlignment = false;
 			this.xrCheckBox4.Text = "Đã soạn/ Đạt";
+			// 
+			// xrLabel7
+			// 
+			this.xrLabel7.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.xrLabel7.LocationFloat = new DevExpress.Utils.PointFloat(23.95821F, 218.7917F);
+			this.xrLabel7.Name = "xrLabel7";
+			this.xrLabel7.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+			this.xrLabel7.SizeF = new System.Drawing.SizeF(500.0003F, 23F);
+			this.xrLabel7.StylePriority.UseFont = false;
+			this.xrLabel7.StylePriority.UseTextAlignment = false;
+			this.xrLabel7.Text = "2. Phương tiện vận chuyển :";
+			this.xrLabel7.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
+			// 
+			// xrLabel10
+			// 
+			this.xrLabel10.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[Table1.DonViVanChuyen]")});
+			this.xrLabel10.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.xrLabel10.LocationFloat = new DevExpress.Utils.PointFloat(173.3259F, 195.7916F);
+			this.xrLabel10.Name = "xrLabel10";
+			this.xrLabel10.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+			this.xrLabel10.SizeF = new System.Drawing.SizeF(350.6325F, 23F);
+			this.xrLabel10.StylePriority.UseFont = false;
+			this.xrLabel10.StylePriority.UseTextAlignment = false;
+			this.xrLabel10.Text = "xrLabel10";
+			this.xrLabel10.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
 			// 
 			// rpt_PhieuSoanHang
 			// 
