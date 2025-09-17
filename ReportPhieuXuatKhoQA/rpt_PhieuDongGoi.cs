@@ -141,6 +141,7 @@ public class rpt_PhieuDongGoi : XtraReport, IReport
 	public rpt_PhieuDongGoi()
 	{
 		InitializeComponent();
+		BeforePrint += rpt_PhieuSoanHang_BeforePrint;
 	}
 
 	public ReportResult Generate(DataSet ds, string type)

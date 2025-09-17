@@ -183,6 +183,7 @@ public class rpt_PhieuXuatKhoBanThuongMai : XtraReport, IReport
 	public rpt_PhieuXuatKhoBanThuongMai()
 	{
 		InitializeComponent();
+		BeforePrint += rpt_PhieuXuatKhoBanThuongMai_BeforePrint;
 	}
 
 	public ReportResult Generate(DataSet ds, string type)
