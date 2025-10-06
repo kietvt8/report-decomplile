@@ -145,6 +145,7 @@ public class rpt_BienBanHuyVaccineNoiBo : XtraReport, IReport
 	public rpt_BienBanHuyVaccineNoiBo()
 	{
 		InitializeComponent();
+		BeforePrint += rpt_BienBanHuyVaccineNoiBo_BeforePrint;
 	}
 
 	public ReportResult Generate(DataSet ds, string type)
@@ -171,7 +172,7 @@ public class rpt_BienBanHuyVaccineNoiBo : XtraReport, IReport
 
 	private void rpt_BienBanHuyVaccineNoiBo_BeforePrint(object sender, PrintEventArgs e)
 	{
-		string text = dset.Tables[0].Rows[0]["Logo"].ToString();
+		string text = dset.Tables["Table1"].Rows[0]["Logo"].ToString();
 		if (text != "")
 		{
 			byte[] buffer = Convert.FromBase64String(text);
@@ -898,6 +899,7 @@ public class rpt_BienBanHuyVaccineNoiBo : XtraReport, IReport
 			this.xrCheckBox2.Name = "xrCheckBox2";
 			this.xrCheckBox2.SizeF = new System.Drawing.SizeF(1103F, 28.00001F);
 			this.xrCheckBox2.StylePriority.UseFont = false;
+			this.xrCheckBox2.Text= "Khác:.........................................................................................................................................................................................................................";
 			// 
 			// xrCheckBox1
 			// 
